@@ -142,7 +142,7 @@
     <!-- GALLERY -->
     <section id="gallery">
         <h1>🎀 Gallery</h1>
-        <p><img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/1aff4a7a-dbe0-4e06-b5b0-293bbb1db47b" />
+       <img width="500" height="1080" alt="image" src="https://github.com/user-attachments/assets/bdb4df24-c123-4ca4-a091-46f27818d3fa" /><img width="500" height="1080" alt="image" src="https://github.com/user-attachments/assets/0fe55f4d-f78f-46e1-9a58-b10c80a4bf8e" />
  💞</p>
     </section>
 
