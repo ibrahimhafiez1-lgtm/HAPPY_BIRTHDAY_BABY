@@ -1,9 +1,9 @@
-<img width="500" height="1080" alt="image" src="https://github.com/user-attachments/assets/bdb4df24-c123-4ca4-a091-46f27818d3fa" /><img width="500" height="1080" alt="image" src="https://github.com/user-attachments/assets/0fe55f4d-f78f-46e1-9a58-b10c80a4bf8e" />
+<!DOCTYPE html>
 <html lang="ms">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HAPPY BIRTHDAY SHURAYA 🎀</title>
+    <title>Happy Birthday Shuraya 🎀</title>
 
     <style>
         body {
@@ -135,15 +135,13 @@
     <!-- MEMORY -->
     <section id="memory">
         <h1>📸 Memories</h1>
-        <p><img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/8c44b007-75d6-484a-82dc-26a882ef9fd1" />
-.</p>
+        <p>Baby boleh letak gambar & kenangan manis awak dengan Shuraya dekat sini.</p>
     </section>
 
     <!-- GALLERY -->
     <section id="gallery">
         <h1>🎀 Gallery</h1>
-       <img width="500" height="1080" alt="image" src="https://github.com/user-attachments/assets/bdb4df24-c123-4ca4-a091-46f27818d3fa" /><img width="500" height="1080" alt="image" src="https://github.com/user-attachments/assets/0fe55f4d-f78f-46e1-9a58-b10c80a4bf8e" />
- 💞</p>
+        <p>Letak gambar / video Shuraya dekat bahagian ni nanti 💞</p>
     </section>
 
     <!-- Balloons -->
