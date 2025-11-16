@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ms">
 <head>
 <meta charset="UTF-8">
@@ -138,7 +138,7 @@
 
 <!-- BACKGROUND MUSIC AUTOPLAY -->
 <audio id="bgm" autoplay loop>
-    <source src="https://github.com/ibrahimhafiez1-lgtm/HAPPY_BIRTHDAY_BABY/blob/main/happy_birthday_cute.mp3" type="audio/mpeg">
+    <source src="https://github.com/ibrahimhafiez1-lgtm/HAPPYBIRTHDAYBABY-/blob/main/happy_birthday_cute.mp33" type="audio/mpeg">
 </audio>
 
 <!-- LOCK SCREEN -->
