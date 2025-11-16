@@ -138,7 +138,7 @@
 
 <!-- BACKGROUND MUSIC AUTOPLAY -->
 <audio id="bgm" autoplay loop>
-    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7d1c8c78f5.mp3?filename=happy-birthday-to-you-125076.mp3" type="audio/mpeg">
+    <source src="https://github.com/ibrahimhafiez1-lgtm/HAPPY_BIRTHDAY_BABY/blob/main/happy_birthday_cute.mp3" type="audio/mpeg">
 </audio>
 
 <!-- LOCK SCREEN -->
