@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ms">
 <head>
 <meta charset="UTF-8">
@@ -704,3 +704,4 @@ window.addEventListener("click", function () {
 </script>
 </body>
 </html>
+](https://ibrahimhafiez1-lgtm.github.io/HAPPYBIRTHDAYBABY-/)
