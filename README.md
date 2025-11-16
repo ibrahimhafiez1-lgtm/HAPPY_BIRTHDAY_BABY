@@ -116,10 +116,30 @@
     .closeBtn{position:absolute;right:12px;top:8px;border:none;background:none;
       font-size:20px;cursor:pointer}
 
+    /* SLIDESHOW */
+    .slideshow-container { max-width: 350px; margin: 20px auto; position: relative; }
+    .mySlides { display: none; }
+    .mySlides img { width: 100%; border-radius: 15px; }
+    .dot-container { margin-top: 10px; }
+    .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 3px;
+        background: #ff9bc9;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .active { background: #ff2e7e; }
 </style>
 </head>
 
 <body>
+
+<!-- BACKGROUND MUSIC AUTOPLAY -->
+<audio id="bgm" autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7d1c8c78f5.mp3?filename=happy-birthday-to-you-125076.mp3" type="audio/mpeg">
+</audio>
 
 <!-- LOCK SCREEN -->
 <div id="lockScreen">
@@ -151,18 +171,6 @@
     <button onclick="showSection('wish')">Ucapan Panjang</button>
 </div>
 
-<!-- CONFETTI -->
-<script>
-    for (let i = 0; i < 35; i++) {
-        let c = document.createElement("div");
-        c.className = "confetti";
-        c.style.left = Math.random() * 100 + "vw";
-        c.style.animationDuration = 2 + Math.random() * 3 + "s";
-        c.style.background = ["#ff5fa2", "#ffb3d9", "#ffcce6"][Math.floor(Math.random() * 3)];
-        document.body.appendChild(c);
-    }
-</script>
-
 <!-- HOME -->
 <section id="home" class="section">
     <h1 class="glow">Happy Birthday, NURUL SHURAYA 🎀💗</h1>
@@ -181,7 +189,28 @@
 <!-- SLIDESHOW -->
 <section id="slideshow" class="section" style="display:none">
     <h2>📸 Gambar Cantik Shuraya</h2>
-    <img src="photo_2025-11-16_22-36-49.jpg">
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="photo_2025-11-16_22-36-49.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="photo_2025-11-16_22-58-39.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="photo_2025-11-15_23-01-55.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="photo_2025-11-16_22-58-30.jpg">
+        </div>
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
 </section>
 
 <!-- VIDEO -->
@@ -204,7 +233,7 @@
 <!-- MEMORY -->
 <section id="memory" class="section" style="display:none">
     <h2>📚 Memory Page</h2>
-    <p>Letak gambar kenangan awak nanti 💗</p>
+    <img src="photo_2025-11-16_23-15-56.jpg" alt="Memori Bersama" style="max-width:350px;border-radius:15px;border:4px solid #ffb3d9;">
 </section>
 
 <!-- WHY -->
@@ -223,61 +252,67 @@
 <section id="wish" class="section" style="display:none">
     <h2>🎂 Ucapan Panjang Untuk Shuraya</h2>
     <p style="font-size:20px;">
-        Selamat Hari Lahir, Shuraya 🎀💗
-        Semoga hidup awak sentiasa dipenuhi kegembiraan dan rezeki yang melimpah.
+        Selamat Hari Lahir, Shuraya 🎀💗 Semoga hidup awak sentiasa dipenuhi kegembiraan.
     </p>
 </section>
 
 <script>
-    const DEFAULT_PASSWORD = 'sayangsangat';
-    const pwdModal = document.getElementById('pwdModal');
-    const pwdInput = document.getElementById('pwdInput');
-    const lockScreen = document.getElementById('lockScreen');
+const DEFAULT_PASSWORD = 'sayangsangat';
+const pwdModal = document.getElementById('pwdModal');
+const pwdInput = document.getElementById('pwdInput');
+const lockScreen = document.getElementById('lockScreen');
 
-    document.getElementById('enterBtn').onclick = ()=> pwdModal.classList.add('open');
-    function closePwd(){ pwdModal.classList.remove('open'); pwdInput.value=''; }
+document.getElementById('enterBtn').onclick = ()=> pwdModal.classList.add('open');
+function closePwd(){ pwdModal.classList.remove('open'); pwdInput.value=''; }
 
-    document.getElementById('pwdCheck').onclick = ()=>{
-        if(pwdInput.value === DEFAULT_PASSWORD){
-            lockScreen.style.display = 'none';
-            pwdModal.classList.remove('open');
-            showSection('home');
-            document.getElementById('bgAudio').play().catch(()=>{});
-        } else {
-            alert('Password salah!');
-            pwdInput.value = '';
-        }
-    };
-
-    function showSection(id){
-        ['home','slideshow','video','surat','memory','why','wish'].forEach(s=>{
-            document.getElementById(s).style.display = (s===id?'block':'none');
-        });
-        window.scrollTo({top:0});
+document.getElementById('pwdCheck').onclick = ()=>{
+    if(pwdInput.value === DEFAULT_PASSWORD){
+        lockScreen.style.display = 'none';
+        pwdModal.classList.remove('open');
+        showSection('home');
+        document.getElementById('bgAudio').play().catch(()=>{});
+    } else {
+        alert('Password salah!');
+        pwdInput.value = '';
     }
+};
 
-    function countdown(){
-        const target = new Date('Nov 23, 2025 00:00:00').getTime();
-        setInterval(()=>{
-            const now = new Date().getTime();
-            const diff = target - now;
-            const d = Math.floor(diff/(1000*60*60*24));
-            const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
-            const m = Math.floor((diff%(1000*60*60))/(1000*60));
-            const s = Math.floor((diff%(1000*60))/1000);
-            document.getElementById('countdown').textContent = `${d} hari ${h} jam ${m} minit ${s} saat`;
-        },1000);
-    }
-    countdown();
+function showSection(id){
+    ['home','slideshow','video','surat','memory','why','wish'].forEach(s=>{
+        document.getElementById(s).style.display = (s===id?'block':'none');
+    });
+    window.scrollTo({top:0});
+}
 
-    for (let i = 0; i < 6; i++) {
-        let b = document.createElement("div");
-        b.className = "balloon";
-        b.style.left = Math.random()*100+"vw";
-        b.style.animationDuration = 4 + Math.random()*4 + "s";
-        b.innerHTML = "🎈";
-        document.body.appendChild(b);
-    }
+function countdown(){
+    const target = new Date('Nov 23, 2025 00:00:00').getTime();
+    setInterval(()=>{
+        const now = new Date().getTime();
+        const diff = target - now;
+        const d = Math.floor(diff/(1000*60*60*24));
+        const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+        const m = Math.floor((diff%(1000*60*60))/(1000*60));
+        const s = Math.floor((diff%(1000*60))/1000);
+        document.getElementById('countdown').textContent = d+" hari "+h+" jam "+m+" minit "+s+" saat";
+    },1000);
+}
+countdown();
+
+let slideIndex = 1;
+showSlides(slideIndex);
+function currentSlide(n){ showSlides(slideIndex = n); }
+function showSlides(n){
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if(n>slides.length){ slideIndex=1 }
+    if(n<1){ slideIndex=slides.length }
+    for(i=0;i<slides.length;i++) slides[i].style.display="none";
+    for(i=0;i<dots.length;i++) dots[i].className = dots[i].className.replace(" active", "");
+    slides[slideIndex-1].style.display="block";
+    dots[slideIndex-1].className += " active";
+}
+setInterval(()=>{ slideIndex++; showSlides(slideIndex); },3000);
 </script>
 
 </body>
