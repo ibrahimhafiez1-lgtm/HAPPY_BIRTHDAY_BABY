@@ -1,4 +1,4 @@
-
+HAPPY BIRTHDAY BABBYYYYY
 <html lang="ms">
 <head>
 <meta charset="UTF-8" />
@@ -150,22 +150,22 @@
     <button onclick="showSection('slideshow')">Gambar</button>
     <button onclick="showSection('video')">Video</button>
     <button onclick="showSection('surat')">Surat</button>
-    <button onclick="showSection('memory')">Memori</button>
-    <button onclick="showSection('why')">Kenapa Istimewa</button>
+    <button onclick="showSection('memory')">Gambar Kita</button>
+    <button onclick="showSection('why')">Kenangan</button>
     <button onclick="showSection('wish')">Ucapan Panjang</button>
 </div>
 
 <!-- ---------- HOME ---------- -->
 <section id="home" class="section" style="display:block">
-    <h1 class="glow">Happy Birthday, NURUL SHURAYA 🎀💗</h1>
+    <h1 class="glow">Happy Birthday, Baby 🎀💗</h1>
     <h3>23 November 2005</h3>
-    <p>Hari ni hari istimewa untuk seorang yang bermakna… iaitu awak 💗</p>
+    <p>Hari ni hari istimewa untuk seorang yang bermakna… iaitu baby  💗</p>
 
     <h2>🎀 Countdown Ke Birthday Shuraya</h2>
     <h1 id="countdown"></h1>
 
     <div class="music-controls" aria-hidden="false">
-        <div class="title-small">Lagu: Anime Sweet (auto main selepas unlock)</div>
+        <div class="title-small"></div>
         <button id="playPauseBtn" class="small-btn">Play</button>
         <button id="stopBtn" class="small-btn">Stop</button>
     </div>
@@ -173,7 +173,7 @@
 
 <!-- ---------- SLIDESHOW ---------- -->
 <section id="slideshow" class="section" style="display:none">
-    <h2>📸 Gambar Cantik Shuraya</h2>
+    <h2>📸 Gambar Baby</h2>
     <div class="slideshow-container">
         <div class="mySlides"><img src="photo_2025-11-16_22-36-49.jpg" alt="pic1"></div>
         <div class="mySlides"><img src="photo_2025-11-16_22-58-39.jpg" alt="pic2"></div>
@@ -190,7 +190,7 @@
 
 <!-- ---------- VIDEO ---------- -->
 <section id="video" class="section" style="display:none">
-    <h2>🎥 Video Untuk Shuraya</h2>
+    <h2>🎥 Video Untuk Baby</h2>
     <video controls>
         <source src="video_2025-11-16_22-36-23.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -199,35 +199,40 @@
 
 <!-- ---------- SURAT ---------- -->
 <section id="surat" class="section" style="display:none">
-    <h2>💌 Surat Untuk Shuraya</h2>
+    <h2>💌 Surat Untuk Baby</h2>
     <p style="font-size:18px;">
-        Shuraya… awak sangat istimewa, lembut hati, kuat, dan berharga.
-        Semoga hari lahir ni penuh kebahagiaan dan senyuman 💗
+        BABYYYYYYY…
+Hari ini hari yang sangat istimewa sebab family dan saya dapat seorang insan yang baik, lembut hati dan membawa cahaya pada semua orang sekeliling — termasuk saya.
+
+Saya harap hari lahir baby kali ni penuh dengan ketenangan, rezeki yang baik, dan senyuman yang tak pernah hilang. Awak layak rasa disayangi, diraikan, dan dihargai. Walaupun kadang baby kuat pendam,kuat merajuk,kuat marah,kuat semua mende kuat.hahahah.saya nak baby tahu… baby sebenarnya lebih kuat daripada yang baby fikir.
+
+Terima kasih sebab muncul dalam hidup saya, dan terima kasih sebab selalu buat saya rasa bermakna. Saya doakan semua impian awak jadi kenyataan satu hari nanti.
+
+Selamat Hari Lahir, baby.
+Saya bangga dengan baby.
+💗🎀  
     </p>
 </section>
 
 <!-- ---------- MEMORY ---------- -->
 <section id="memory" class="section" style="display:none">
-    <h2>📚 Memory Page</h2>
+    <h2>📚 Gambar Kita</h2>
     <img src="photo_2025-11-16_23-15-56.jpg" alt="memori">
 </section>
 
 <!-- ---------- WHY ---------- -->
 <section id="why" class="section" style="display:none">
-    <h2>🌸 Kenapa Shuraya Istimewa</h2>
+    <h2>🌸 Kenangan</h2>
     <ul style="list-style:none;font-size:18px;line-height:2;">
-        <li>• Awak baik hati 💗</li>
-        <li>• Awak penyayang 🎀</li>
-        <li>• Cantik luar & dalam 💞</li>
-        <li>• Kuat walaupun pendam 💗</li>
-        <li>• Buat orang rasa dihargai 🎀</li>
+        <li>• Hi.Shuraya,Betul ke awak suke saya. Baby masih ingat ayat saya untuk kenal dengan baby. Saya ter crush dengan baby tau dari sejak saya pandang baby tetapi saya tanak couple saya nak suke dalam diam dan iye lah time tu baby budak hot kan ramai orang suke termasuk senior.Tapi bile kawan saya cakap saya suke baby kawan baby cakap baby suke saya itu lah peluang saya untuk chat baby.Selepas itu, hahahah macam nak buat karangan pulak....kita putus walaupun kita putus iye lah salah saya dalam hubungan ni saya banyak salah tetapi semasa kita putus saya masih akui baby tu awek saya....Banyak lagi kenangan kita macam ii kita hadap sedar ii dah 7 tahun saya harap saya ada dengan baby sampai hari tua baby birthday baby yang ke 80 saya akan buat website ni jugak okay lah pergi ke next button okay 💗</li>
+       
     </ul>
 </section>
 
 <!-- ---------- WISH ---------- -->
 <section id="wish" class="section" style="display:none">
-    <h2>🎂 Ucapan Panjang Untuk Shuraya</h2>
-    <p style="font-size:19px;">Selamat Hari Lahir, Shuraya 🎀💗 Semoga hidup awak sentiasa dipenuhi kegembiraan.</p>
+    <h2>🎂 Ucapan Panjang Untuk Baby</h2>
+    <p style="font-size:19px;">Selamat Hari Lahir, Baby yang ke 20 🎀💗 semoga itu ini hahaha gurau. ii ..semoag baby di panjangkan umur, di permudahkan segala urusan, diberi kesihatan yang baik,semoga baby di murahkan rezeki seperti masa yang tak pernah berhenti,semoga baby dapat apa yang baby nak,semoga baby last sem ni dapat dekan dapat naikkan pointer dan dapat bangga kan family....apa apa pun good luck final baby...pada hari lahir baby ni saya nak mintak maaaf atas kesalahn saya sepanjang kita kenal dari pelbagai kesalahan saya nak baby tahu saya betul sayanag kan baby saya takda orang lain tau...Saya harap baby happy pada hari ni dan apa yang saya buat wish betul ii panjang dekat whatapps lenguh ni type gune laptop  .</p>
 </section>
 
 <!-- ---------- SCRIPTS: UI, slideshow, countdown, balloons/love ---------- -->
